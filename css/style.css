@@ -66,7 +66,7 @@
 
 .board {
   padding: 30px;
-  background: url(https://cdn.pixabay.com/photo/2021/01/04/23/12/new-york-5889199_1280.jpg) no-repeat center center fixed;
+  background: url("../images/bg1.jpg") no-repeat center center fixed;
   background-size: cover;
   height: auto;
   min-height: 100vh;
@@ -165,10 +165,5 @@
 .create-column {
   background: #919191;
   border: 1px solid white;
-}
-
-.btn {
-  display: -ms-flexbox;
-  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
