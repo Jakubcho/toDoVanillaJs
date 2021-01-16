@@ -3,24 +3,29 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Todo vanilia JS</title>
+	<link rel="stylesheet" type="text/css" href="vendor/Normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-	<div id="board" class="board">
-		<h1>Todo vanilia JS</h1>
-		<button class='create-column'>Add a column</button>
-		<div class='column-container row'></div>
+	<div class="container">
+		<div id="board" class="board">
+			<h1>Todo vanilia JS</h1>
+			<button class='create-column'>Add a column</button>
+			<div class='column-container'></div>
+		</div>
 	</div>
 	<script id='column-template' type='x-tmpl-mustache'>
-		<div class='column col-4'>
+		<div class='column'>
 			<h2 class="column-title">{{name}}</h2>
-			<ul id={{id}} class='column-card-list row'></ul>
-			<button class="btn-delete">X</button>
-			<button class="add-card">Add a card</button>
+			<ul id={{id}} class='column-card-list'></ul>
+			
+				<button class="btn-delete">X</button>
+				<button class="add-card">Add a card</button>
+			
 		</div>
 	</script>
 	<script id='card-template' type="x-tmpl-mustache">	
-		<div class="card col-3">
+		<div class="card">
 			<p class="card-description">{{description}}</p>
 			<button class="btn-delete">x</button>
 		</div>

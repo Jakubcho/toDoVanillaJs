@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    border-radius:10px;
+}
+.row::before,
+.row::after {
+	content:"";
+	display: table ;
+	clear: both;
+ }
+[class*='col-'] {
+	float: left;
+	Min-height: 1px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.board {
+	padding: 30px;
+	background: url(https://cdn.pixabay.com/photo/2021/01/04/23/12/new-york-5889199_1280.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: auto;
+	min-height: 100vh;
+
+}
+.board h1 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 60px;
+	text-align: center;
+	color:rgba(145, 145, 145, 1);
+
+}
+.column-container {
+	display: flex;
+}
+.column-container div {
+	width: 100%;
+	display: flex;
+}
+.column {
+	flex-direction: column;
+	background-color: rgba(145, 145, 145, 0.7);
+	text-align: center;
+	color:white;
+	border: 2px solid black;	
+}
+
+.column-title {
+	font-size: 40px;
+}
+.column-card-list {
+	padding: 0px;
+	list-style-type: none;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1;
+	justify-content: center;
+}
+.column-card-list li div {
+	background-color:#919191;
+	border: 1px solid black;
+	min-height: 100px;
+	height: auto;
+}
+.column-card-list li {
+	display: flex;
+	justify-content: center;
+	width: 25%;
+	margin: 5px;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+.card {
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	flex-direction: column;
+	max-height: 100px;
+}
+.btn-delete {
+	background: black;
+	border: 1px solid white;
+	padding:2px 8px;
+
+}
+.add-card {
+	background: black;
+	border: 1px solid white;
+	margin-top:2px;
+}
+.create-column{
+	background: #919191;
+	border: 1px solid white;
+}
+.btn {
+	display: flex;
+
+}
