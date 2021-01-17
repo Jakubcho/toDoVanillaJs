@@ -113,7 +113,7 @@ Column.prototype = {
 
 	// CREATING CARDS
 	var card1 = new Card('New task');
-	var card2 = new Card('Create kanban boards');
+	var card2 = new Card('Create todo');
 
 	// ADDING CARDS TO COLUMNS
 	todoColumn.addCard(card1);
